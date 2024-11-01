@@ -1,0 +1,86 @@
+.trapit-category-header {
+    text-transform: uppercase;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 11px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.trapit-category-trap {
+    background-color: #fff;
+    /*
+    border-bottom: 1px solid #f6f6f6;
+    border-left: 1px solid #f6f6f6;
+   */
+}
+
+.trapit-trap-link {
+    color: #504F4F;
+    font-weight: 500;
+    letter-spacing: .4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.trapit-active {
+    color: #fff !important;
+    background-color: #00a69c !important;
+    border-left-width: 0px;
+}
+
+.app .wrapper {
+    margin: 0px !important;
+    margin-top: 0px !important;
+}
+
+.app .content {
+    padding-bottom: 0px;
+}
+
+.trapit-masonry-item {
+    margin-right: 15px;
+}
+
+/*
+#wpcontent {
+    padding-left: 0px !important;
+}
+*/
+
+.sidebar.traps {
+    margin-left: -20px;
+}
+
+.content.traps {
+    margin-left: 220px;
+}
+
+.trapit-body-masonry {
+    min-height: 100%;
+}
+
+#wpbody-content {
+    padding-bottom: 0px;
+}
+
+/*
+.date-info {
+    position: relative !important;
+}
+*/
+
+img.icon-minus {
+  padding-top: 17px;
+  padding-left: 10px;
+}
+
+img.icon-plus {
+  padding-top: 13px;
+  padding-left: 10px;
+}
+
+img.icon-all {
+    padding-top: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

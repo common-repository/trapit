@@ -1,0 +1,853 @@
+.trapit-list-container {
+-webkit-user-select: none;
+box-sizing: border-box;
+color: rgb(51, 51, 51);
+display: block;
+font-family: proxima-nova, sans-serif;
+font-size: 14px;
+height: 650px;
+line-height: 20px;
+overflow-x: hidden;
+overflow-y: auto;
+padding-bottom: 100px;
+width: 240px;
+}
+
+.trapit-list {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAAAAACMmsGiAAAAHElEQVR4AWM4d+7YMSCxYwfDsWPnzjHs2HHuHAB8sAxp06tUogAAAABJRU5ErkJggg==);
+  background-origin: padding-box;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 134px;
+  line-height: 20px;
+  width: 240px;
+}
+
+.trapit-header {
+  -webkit-box-shadow: rgb(221, 221, 221) 0px 1px 0px 0px;
+  -webkit-user-select: none;
+  background-image: linear-gradient(rgb(0, 156, 147) 0px, rgb(0, 152, 143) 100%);
+  background-repeat: repeat-x;
+  box-shadow: rgb(221, 221, 221) 0px 1px 0px 0px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 31px;
+  line-height: 20px;
+  margin-bottom: 1px;
+  min-height: 30px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  position: relative;
+  width: 240px;
+}
+
+.trapit-title {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  height: 15px;
+  line-height: 15.7142858505249px;
+  max-width: 150px;
+  width: 150px;
+}
+
+
+/* title-span */
+.trapit-title-span {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline;
+  font-family: proxima-nova, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  height: auto;
+  line-height: 15.7142858505249px;
+  margin-right: 8px;
+  width: auto;
+}
+
+.trapit-meta {
+  -webkit-user-select: none;
+  bottom: 0px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  display: none;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  width: auto;
+}
+
+.trapit-expander-collapser {
+  -webkit-user-select: none;
+  border-left-color: rgb(212, 211, 212);
+  border-left-style: solid;
+  border-left-width: 1px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  display: inline-block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  line-height: 20px;
+  position: relative;
+  width: auto;
+}
+
+.trapit-item {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgb(246, 246, 246);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  box-sizing: border-box;
+  color: rgb(80, 79, 79);
+  cursor: pointer;
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 51px;
+  letter-spacing: 0.400000005960465px;
+  line-height: 20px;
+  min-height: 50px;
+  position: relative;
+  width: 240px;
+}
+
+.trapit-info {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(80, 79, 79);
+  cursor: pointer;
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: 0.400000005960465px;
+  line-height: 20px;
+  min-height: 50px;
+  padding-bottom: 15px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 15px;
+  position: relative;
+  width: 240px;
+  z-index: 50;
+}
+
+.trapit-titleWrapper {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(80, 79, 79);
+  cursor: pointer;
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 20px;
+  letter-spacing: 0.400000005960465px;
+  line-height: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 184px;
+}
+
+.trapit-trap-name {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(80, 79, 79);
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 20px;
+  letter-spacing: 0.400000005960465px;
+  line-height: 20px;
+  max-width: 180px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 83.078125px;
+}
+
+
+/* all content */
+.trapit-content-traps {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.14902) -2px 0px 5px 0px;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, -40);
+  -webkit-user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.14902) -2px 0px 5px 0px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 5069px;
+  line-height: 20px;
+  margin-left: 240px;
+  margin-top: 40px;
+  min-height: 100%;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+  position: relative;
+  transform: matrix(1, 0, 0, 1, 0, -40);
+  width: 720px;
+}
+
+/* right-hand side content */
+
+.trapit-queue {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 4939px;
+  line-height: 20px;
+  min-height: 600px;
+  position: relative;
+  width: 720px;
+}
+
+.trapit-filter-row {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-top-color: rgb(224, 224, 224);
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 54px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  position: relative;
+  width: 876px;
+}
+
+.trapit-body-masonry {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 4885px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  min-height: 800px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 15px;
+  position: relative;
+  width: 876px;
+  zoom: 1;
+}
+
+.trapit-masonry-item {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  float: none;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 510px;
+  left: 15px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 15px;
+  width: 324px;
+  zoom: 1;
+}
+
+.trapit-comment-box {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-box-shadow: rgb(238, 238, 238) 0px 1px 0px 0px;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 253, 224);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  box-shadow: rgb(238, 238, 238) 0px 1px 0px 0px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 87px;
+  line-height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  min-height: 40px;
+  padding-bottom: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  position: relative;
+  width: 320px;
+  zoom: 1;
+}
+
+article {
+  -webkit-box-shadow: rgb(211, 211, 211) 1px 1px 2px 0px;
+  -webkit-user-select: none;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: rgb(211, 211, 211) 1px 1px 2px 0px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 413px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: relative;
+  width: 320px;
+  zoom: 1;
+}
+
+figure {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 126px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  min-height: 126px;
+  min-width: 320px;
+  position: relative;
+  width: 320px;
+  zoom: 1;
+}
+
+.trapit-notification {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-transform: matrix3d(1, 0, 0, 0, 0, 6.12323399573677e-17, 1, 0, 0, -1, 6.12323399573677e-17, 0, 0, 0, 0, 1);
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(207, 247, 188);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgba(167, 226, 107, 0.568627);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(167, 226, 107, 0.568627);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(167, 226, 107, 0.568627);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(167, 226, 107, 0.568627);
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 30px;
+  left: auto;
+  line-height: 20px;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 14px;
+  position: absolute;
+  right: auto;
+  top: 0px;
+  transform: matrix3d(1, 0, 0, 0, 0, 6.12323399573677e-17, 1, 0, 0, -1, 6.12323399573677e-17, 0, 0, 0, 0, 1);
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 307.1875px;
+  z-index: 999;
+  zoom: 1;
+}
+
+.trapit-message {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 0px;
+  line-height: 20px;
+  max-width: 200px;
+  width: 200px;
+  zoom: 1;
+}
+
+.trapit-article-rel {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(54, 138, 139);
+  cursor: auto;
+  display: inline;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  text-decoration: none;
+  width: auto;
+  zoom: 1;
+}
+
+.trapit-preload-bg {
+  -webkit-background-size: 80px 80px;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-timing-function: linear;
+  -webkit-user-select: none;
+  background-color: rgb(182, 25, 66);
+  background-image: linear-gradient(-45deg, rgb(204, 28, 74) 25%, transparent 25%, transparent 50%, rgb(204, 28, 74) 50%, rgb(204, 28, 74) 75%, transparent 75%, transparent);
+  background-size: 80px 80px;
+  box-sizing: border-box;
+  color: rgb(54, 138, 139);
+  cursor: auto;
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 126px;
+  line-height: 20px;
+  opacity: 0;
+  position: absolute;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  width: 320px;
+  zoom: 1;
+}
+
+.trapit-article-img {
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-timing-function: linear;
+  -webkit-user-select: none;
+  border-bottom-color: rgb(54, 138, 139);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(54, 138, 139);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(54, 138, 139);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(54, 138, 139);
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(54, 138, 139);
+  cursor: auto;
+  display: inline;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 126px;
+  line-height: 20px;
+  max-width: 100%;
+  min-height: 126px;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  vertical-align: middle;
+  width: 320px;
+  zoom: 1;
+}
+
+section {
+-webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 241px;
+  line-height: 20px;
+  padding-bottom: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  position: relative;
+  width: 320px;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-primary-name {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(0, 166, 156);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  height: 26px;
+  left: 0px;
+  letter-spacing: 0.800000011920929px;
+  line-height: 14.2857151031494px;
+  max-width: 268px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  position: absolute;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  top: 0px;
+  white-space: nowrap;
+  width: 125.3125px;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-title-is-read-only {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 81px;
+  line-height: 20px;
+  width: 296px;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-section-p {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(74, 74, 74);
+  display: block;
+  font-family: Merriweather, serif;
+  font-size: 22px;
+  height: 81px;
+  line-height: 27px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 22px;
+  width: 296px;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-section-title-rel {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(74, 74, 74);
+  cursor: pointer;
+  display: inline;
+  font-family: Merriweather, serif;
+  font-size: 22px;
+  height: auto;
+  line-height: 27px;
+  text-decoration: none;
+  width: auto;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-section-title-span {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(74, 74, 74);
+  cursor: pointer;
+  display: inline;
+  font-family: Merriweather, serif;
+  font-size: 22px;
+  height: auto;
+  line-height: 27px;
+  width: auto;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-source-info {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: none;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  margin-right: 0px;
+  margin-top: -4px;
+  position: absolute;
+  right: 6px;
+  width: auto;
+  word-wrap: break-word;
+  z-index: 100;
+  zoom: 1;
+}
+
+.trapit-summary-is-read-only {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 90px;
+  line-height: 20px;
+  position: relative;
+  width: 296px;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-summary-p {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(149, 149, 149);
+  display: block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 13px;
+  height: 54px;
+  letter-spacing: normal;
+  line-height: 18px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  width: 296px;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-summary-rel {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(149, 149, 149);
+  cursor: pointer;
+  display: inline;
+  font-family: proxima-nova, sans-serif;
+  font-size: 13px;
+  height: auto;
+  letter-spacing: normal;
+  line-height: 18px;
+  margin-top: 5px;
+  text-decoration: none;
+  width: auto;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-summary-span {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  color: rgb(149, 149, 149);
+  cursor: pointer;
+  display: inline;
+  font-family: proxima-nova, sans-serif;
+  font-size: 13px;
+  height: auto;
+  letter-spacing: normal;
+  line-height: 18px;
+  width: auto;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+.trapit-info {
+  -webkit-user-select: none;
+  bottom: 5px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  float: none;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  height: 28px;
+  line-height: 20px;
+  max-width: 100%;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  position: absolute;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 141.4375px;
+  zoom: 1;
+}
+
+.trapit-publish-date {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  clear: left;
+  color: rgb(172, 172, 172);
+  display: block;
+  float: left;
+  font-family: proxima-nova, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  height: 16px;
+  line-height: 16px;
+  max-width: 230px;
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 117.4375px;
+  zoom: 1;
+}
+
+.trapit-clearfix {
+    /* ::before ::after */
+}
